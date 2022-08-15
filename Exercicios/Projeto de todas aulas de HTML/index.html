@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Completo</title>
+
+    <style>
+
+        body{
+           
+        }
+
+        
+        h1{
+            background-color:lightgrey; /*cor de funfo do H1.*/
+            height: 100px; /*altura do Fundo*/
+            width: 500px; /*Largura do fundo.*/
+            border-width: 20px; /*Largura da borda.*/
+            border-style:dashed; /*Estilo da borda.*/
+           
+            /* Simplificação do Border:*/
+            border: 10px solid rgb(204, 200, 200);
+
+            padding-top: 20px;
+            padding-right: 40px; /* Espaçamentos em relação a borda.*/
+            padding-left: 40px;
+            padding-bottom: 10px;
+            
+            /*Simplificação do Padding:*/
+            /*padding: 10px 10px 10px 10px;*/
+    /*Quando os valores forem iguais, podemos informar uma única vez.*/
+            padding: 10px;
+
+            margin-top: 50px;
+            margin-right: 80px;
+            margin-bottom: 40px;
+            margin-left: 200px;
+           }
+
+        h2{
+            margin-left: 100px;
+           }
+           
+        img{
+            margin-left: 250px;
+            box-shadow: 5PX 3PX 7PX 2PX rgb(39, 38, 38) ;
+        }   
+
+        p{
+            margin-left: 20PX;
+            
+        }
+    </style>
+   
+    <link rel="stylesheet" href="style.css">
+     
+    <link rel="schorcut icon" href="Leo.png" >
+    <!--Através da tag "link", inserimos um ícone (leão)favorito no topo do site com uma imagem anteriormente "trabalhada".-->
+</head>
+<body>
+    <header>
+    <H1 class="titulo" ><em>Anotações das Aulas do curso de HTML</em></H1>
+   
+    
+</header>
+
+<h2>Projetos contendo exercícios de todas as aulas de HTML.</h2>
+    <p>A proposta desse projeto é, agrupar os exercícios de todas a aulas de HTML até aqui, baseado no canal do youtube, Curso em Vídeo.</p>
+
+    <h2><ins>Títulos, Subtítulos e Parágrafos</ins></h2>
+    <p>Existem Tags específicas para  inserir em um texto, o título, subtítulo ou parágrafos.Então vejamos:</p>
+
+        <p>* Com a tag "h1", podemos inserir um título ao texto.</p>
+        <p>** Com a tag "h2", conseguimos inserir um subtítulo.</p>
+        <p>*** Já com a Tag "h3", podemos inserir um "subtítulo" ao subtítulo(h2).</p>
+
+<img src="h1.jpg " width="500" alt="h1,h2" >
+
+
+
+
+        <p><strong>Observação</strong>: Em HTML, a hierarquia dos "títulos" vão de h1 à h6.</p>
+        
+
+        <hr> <!--A tag "hr" serve para inserir uma linha contínua, nesse caso, criando uma intervalo para o próximo assunto!-->
+
+        <h1>Parágrafos e Quebras de Linha!</h1>
+
+        <p>Ao inserir um texto em nosso projeto, podemos escolher em que parte do mesmo, iremos criar uma quebra de línha.Basta utilizar a tag "br".</p>
+
+        <h2>Exemplo:  </h2>
+
+        <p>Estou aprendendo HTML e Css  <br>  através do Canal do Guanabara, Curso em Vídeo.  <br> Tem sido uma experiência muito motivadora pois,  <br> tenho tido excelentes resultados.</p>
+
+        <hr>
+
+        <h1>Testes com Imagens!</h1>
+
+        <h2>Inserindo Imagens</h2>
+
+        <p>Para inserir imagens em HTML, basta usar a tag "img" e escolher o arquivo previamente salvo na pasta.</p>
+
+        <h2>Exemplo:</h2>
+
+        <img src="nossaFotoP.png " width="500" alt="Eu&ela">
+
+        <p>Podemos tbm, inserir um ícone favorito.Que nesse caso, será um leão.Porém, lá na cabeça "head" do arquivo.</p>
+
+    <!--Exemplo: Código usado lá em cima.
+    <link rel="schorcut icon" href="Leo.png" >
+    Através da tag "link", inserimos um ícone (leão)favorito no topo do site com uma imagem anteriormente "trabalhada".-->
+    
+    <p>Agora, podemos ainda inserir uma imagem com a utilização do Link da imagem; Copiando o "endereço da imagem" e colando na Tag "img src"</p>
+
+    <h2>Exemplo:</h2>
+    <img src="https://www.carfilia.com/wp-content/uploads/2021/05/Avoid-Vulnerability.jpg"  width="500
+    " alt="security">
+
+   
+
+
+<h2><b>Atenção!</b></h2>
+
+        <p>Por se tratar de  links internos, em nenhumas dessas 5 página, ao mudar para outra página, precisamos usar as Tags "Target='_blank' e "rel =external".Pois, o que queremos é que ao clicar para a outra tela, a tela seguinte se SOBREPONHA  a anterior.E, se quisermos retornar, basta clicar em "voltar" - Estamos usando essas tags apenas para fins diáticos - </p>
+
+        <p>Esta é a página inicial do meu site.Para ir até a página 01, <a href="pag001.html"target="_blank" rel="external"><strong>Clique Aqui!</strong></a></p>
+
+        
+<hr>       
+        
+    
+</body>
+</html>

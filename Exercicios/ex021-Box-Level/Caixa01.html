@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+
+        <style>
+
+            body{
+                background-color: rgb(241, 236, 236);
+            }
+            h1{
+                background-color: lightgrey; /*cor de funfo do H1.*/
+                height: 100px; /*altura do Fundo*/
+                width: 500px; /*Largura do fundo.*/
+                border-width: 20px; /*Largura da borda.*/
+                border-style:dashed; /*Estilo da borda.*/
+                color: rgb(17, 4, 54);
+               
+                /* Simplificação do Border:*/
+                border: 10px solid rgb(16, 4, 73);
+
+                outline-width: 10px;
+                outline-style: solid; /*Outline é o trasejado fora da borda.*/
+                outline-color: salmon;
+
+                /*Simplificação de Outline
+                Seguindo sempre a ordem:
+                -Espessura da linha,
+                -Estilo da Linha e
+                -color da linha
+                exemplo:*/
+                outline: 10px solid salmon ;
+
+                padding-top: 20px;
+                padding-right: 40px; /* Espaçamentos em relação a borda.*/
+                padding-left: 80px;
+                padding-bottom: 10px;
+                
+                /*Simplificação do Padding:*/
+                /*padding: 10px 10px 10px 10px;*/
+        /*Quando os valores forem iguais, podemos informar uma única vez.*/
+                padding: 20px ;
+
+                margin-top: 50px;
+                margin-right: 80px;    /*Margem*/
+                margin-bottom: 40px;
+                margin-left: 200px;
+
+                /*Simplificando margin: Exemplo:border: */
+
+                margin: 50px auto 40px auto;
+               }
+
+              a{ /*Configuração para a âncora(link).*/
+                color: brown;
+                border-width: 5px;
+                border-style: dashed;
+                border-color: rgb(11, 4, 102);
+
+        /*Simplificando Border:exemplo:*/
+                    border: 5px dashed blue;     
+
+                padding-top: 10px;
+                padding-right: 10px; /* Espaçamentos em relação a borda.*/
+                padding-left: 10px;
+                padding-bottom: 10px;
+
+        /*Simplificando padding: exemplo:*/
+
+                padding: 10px ; /*Quando forem valores iguais, informe apenas uma Vez! */
+               }
+            
+
+        </style>
+
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+        <p>Parágrafos também são exemplos de Box-Level, mas os <a href= "#" > , links são exemplos de caixas inline-level </a>. Vamos ver alguns exemplos:</p>
+
+
+
+
+
+
+
+</body>
+</html>

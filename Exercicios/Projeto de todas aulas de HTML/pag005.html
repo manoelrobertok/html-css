@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Completo</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+       <link rel="schorcut icon" href="Leo.png" >
+    <!--Através da tag "link", inserimos um ícone (leão)favorito no topo do site com uma imagem anteriormente "trabalhada".-->
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou <br>
+    simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <!--Exemplo feito com-->
+
+        <picture>
+        
+            <source media="(max-width: 750px )" srcset="nossaFotoP.png" type="image/png">
+            <source media="(max-width: 950px )" srcset="nossaFotoM.png" type="image/png">
+
+            <img src="nossaFotoG.png" width="300" alt="nossa foto">
+
+        </picture>
+        <picture></picture>
+
+        <!--Iniciamos sempre inserindo a imagem com tamanho MAIOR "G".E, através da tag "source media", determinamos que, se na tela que o usuário está, o tamanho da imagem "G", for muito grande;Então que MUDE para a Imagem "M" e, se essa ainda for grande, MUDE  para a imagem "P", e retorne novamente para os demais tamanhos, sempre que necessário.-->
+
+        <!--**Observação: No uso da tag "source", sempre deve ser respeitado a ordem das imagens.Sempre da MENOR para a MAIOR-->
+
+      
+
+        <!--Exemplo feito com Cores-->
+    <!--<picture>
+        <source media="(max-width: 750px)" srcset="fotoP.png" type="image/png">
+       <source media="(max-width:1050px )" srcset="fotoM.png" type="image/png">
+
+        <img src="fotoG.png" alt="imagem flexivel">-->
+
+        <hr>
+
+        <h1>Reproduzindo Audio</h1>
+        <p>Vamos Reproduzir áudios em HTML5</p>
+        
+        <audio src="Demons   Imagine Dragons.mp3" controls autoplay></audio>
+
+        <hr>
+
+    
+        <h1>Inserindo vídeos hospedados localmente</h1>
+        <h2>Este vídeo está hospedado no meu próprio servidor</h2>
+    
+        <video src="nossovideo.mp4" width="250" controls autoplay loop></video> <br>
+    
+        <audio src="Demons   Imagine Dragons.mp3" controls autoplay></audio>
+    <hr>
+        <h1>Inserindo videos do youtube</h1>
+        <h2>Para inserir um vídeo do youtube em seu site primeiro:</h2>
+    
+        <p> 1) Verifique se o vídeo desejado tem os seus direitos autorais protegidos.
+            <p> 2) Clique em "compartilha", clique na opção "incorporar", depois "copiar", COLE o  código em seu <STRONG>STUDIO CODE</STRONG> </p>
+
+
+            <iframe src="560" height="315" srcdoc="" frameborder="0"></iframe>
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uGhXeunMMX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr>
+
+        <p><a href="pag004.html">voltar</a></p>
+
+
+
+</body>
+</html>

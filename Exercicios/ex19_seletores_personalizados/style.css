@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(194, 188, 188); /*cor do fundo de tela*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(47, 95, 47);
+/* O que em Html é "id" em Css é "#". E diz respeito a "identificação".*/
+/*Aqui, identificamos "h1#principal", para que o título do site, fosse alterado separadamente dos demais "h1s".*/
+/*Em HTML é class = Em Css é .(ponto)*/
+}
+h1#principal{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline; /*sublinhado*/
+    background-color: white;
+     }
+
+.observacao{
+        background-color: rgb(218, 171, 17);/*cor de fundo da observação*/
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;/*Posicionamento*/
+        font-weight: bold; /*Negrito*/
+     }
+     
+
+h2{
+    color: rgb(97, 129, 49);
+}
+
+.basico{
+    color: rgb(235, 19, 206); /*configuração individual da classe*/
+    
+}
+.intermediario{
+    color: rgb(255, 230, 0);  /*configuração individual da classe*/
+}
+.avancado{
+    color: rgb(219, 36, 23);  /*configuração individual da classe*/
+}
+.destaque{
+    background-color: brown;
+    color: white;
+}

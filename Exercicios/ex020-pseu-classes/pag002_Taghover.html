@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover.</title>
+
+    <style>
+        body{  /* Tipo de fonte usado na página*/
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        div > p{
+            display: none;  /*Parágrafo filho da div.Aqui o texto será ocultado*/
+        }
+
+        div:hover > p{  
+            display: block; /* Texto irá aparecer como interação*/
+            color: red;
+            background-color: antiquewhite;
+            width: 120px;
+         
+        }
+        div:hover{      /* Interação do Texto "Passe o mouse Aqui!"*/
+           color:rgb(19, 22, 201);
+                }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Criando Interções na div.</h1>   <!--Título-->
+        <p>Passe o mouse sobre o texto abaixo!</p>  <!--Parágrafo-->
+
+        <div>
+            Passe o Mouse Aqui!        <!--Ambos dentro da div-->
+            <p>Texto escondido!!</p>
+        
+        </div>
+
+        <h3><a href="PseudoClasses.html">Voltar</a></h3>
+        <h3><a href="links.html">
+            Personaizando Links</h3>
+                
+            </body>
+            </html>
+        </a>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+        <h2>Código-fonte / Pré-Fomatação</h2>
+        <p> O Código-fonte nada mais é do que comandos.</p>
+        <p>Exemplo: O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript  </p>
+        <!--Para Formatar um comando, com espaçes e caracteres iguasi de forma mais harmonica, selecionamos o código e usamos a tag "code"-->
+
+        <pre>
+            <code>
+        num= int(input('Digite um número'))
+        if num % 2 == 0:
+        print(f'O numero{num} é Par)
+        else:
+            print(f'O número{num} é Ímpar)
+        print('Fim do Programa!')
+            </code>
+        </pre>
+
+        <!--Com a Tag "pre" formatamos o código assim como seria apresentado pela linguagem, inclusive com Indentação-->
+
+        <h2>Citações Simples</h2>
+            <p>Como diria o sábio: <q>O computador é um, Burro muito rápido!</q> </p>
+
+        <!--Através da tag "q" nós utilizamos as Aspas para fazer menção de uma declaração de outra pessoa.Porém de forma simples e sem quebra de linhas-->
+
+        <h2>Citações completas</h2>
+
+            <p>Segundo Jeff Noble, em seu livri HTML para leigos: </p>
+        <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+            A diferença entre elementos inline e um bloco de textos é importante.Os elementos HTML neste capítulo descrevem os blocos de texto.
+
+            <!--Já com a tag "Blockqute" é possivel fazer citações maiores com quebra de linha-->
+
+        </blockquote> 
+
+        <h2>Abreviações</h2>
+        <p>Estou estudando<abbr title="HyperText Markup Language"> HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.Estou adorando!</p>
+
+
+
+</body>
+</html>

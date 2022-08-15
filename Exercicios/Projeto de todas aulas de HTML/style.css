@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+    body{
+        background-image: linear-gradient(TO bottom, white, #c6d9e2, rgb(216, 173, 173)
+        );
+        padding: auto;
+
+       
+    }
+
+    header{
+        background-color: rgba(75, 70, 70, 0.507);
+        background-image: linear-gradient(to  silver, blue, white);
+        height: 200px;
+    }
+    h1{
+        font-family: Georgia, Arial, Helvetica, sans-serif;
+        text-align: center;      
+        color: rgb(8, 29, 61);
+        font-style: normal;
+        box-shadow: 5PX 5PX 10PX rgb(82, 52, 52);
+        background-color: rgb(139, 146, 144);
+        font-weight: bolder; /*Sombreamento ao redor da box h1*/
+        padding: 45px 45px;
+    
+        
+        /*Através da "margin:auto", a CAIXA será posicionada no centro.*/
+    }
+            
+    
+    .titulo{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(139, 146, 144);
+        font-weight: bolder;
+    }
+
+    h2{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: underline;
+        color: rgb(26, 26, 70);
+        font-size: 20PX;
+        text-align: left;
+      
+        
+        /*Através da "text-aling", o  texto será posicionado no centro.*/
+       
+        
+    }
+
+    h3{
+        text-align: center;
+        
+        
+        /*Através da "text-aling", o  texto será posicionado no centro.*/
+    }
+
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(15, 13, 13);
+        text-align: left;
+        
+    }
+
+    img{
+        padding:auto;
+    }
