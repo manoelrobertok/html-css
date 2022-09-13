@@ -75,6 +75,7 @@ header {
     text-align: center;  /*Textos centralizados*/
     padding-top: 15px; /*Espaço acima*/
     padding-bottom: 20px; /*Espaço abaixo*/
+       
 }   
 
 /*Aqui vemos o Cabeçalho(header), que tem uma tag filha, (h1).Ou seja, um título dentro do cabeçalho!*/
@@ -108,6 +109,13 @@ nav{
     background-color: var(--cor5); /*Fundo do Link(nav)*/
     padding: 10px; /*Altura da nav.*/
     font-weight: bold;  /* Letras em negrito.*/
+    background-image: url('imagens/instagram-Logo-PNG-Transparent-Background-download-150x150.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 30px 30px;
+    
+
+   
   
 }
 
