@@ -57,16 +57,16 @@
         padding: 0px;
     }
 
-   /*Agora basta informar qual a cor queremos para cada parde do nossi projeto*/
+   /*Agora basta informar qual a cor queremos para cada parde do nosso projeto*/
 
 body /*O corpo d site.*/
 {
-    background-color: var(--cor0);
-   /* background-color: var(--cor6);*/
+   background-color: var(--cor0);
+   /*background-color: var(--cor6);*/
     font-family: var(--fonte-padrao);
+   /* background-image: url('imagens/dan-droids-pq.png');*/
+     
 }
-
-
 
 header {
     
@@ -74,8 +74,11 @@ header {
     min-height: 145px; /*Altura minima do header.*/
     text-align: center;  /*Textos centralizados*/
     padding-top: 15px; /*Espaço acima*/
-    padding-bottom: 20px; /*Espaço abaixo*/
-       
+    padding-bottom: 20px; /*Espaço abaixo*/     
+   /* background-image: url('imagens/img6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;*/
+   
 }   
 
 /*Aqui vemos o Cabeçalho(header), que tem uma tag filha, (h1).Ou seja, um título dentro do cabeçalho!*/
@@ -109,28 +112,28 @@ nav{
     background-color: var(--cor5); /*Fundo do Link(nav)*/
     padding: 10px; /*Altura da nav.*/
     font-weight: bold;  /* Letras em negrito.*/
-    background-image: url('imagens/instagram-Logo-PNG-Transparent-Background-download-150x150.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 30px 30px;
+    background-repeat: repeat;
+    background-size: 30px 30px;  
     
-
    
   
 }
 
 nav > a{
+    
     color: white; /*Cor das letras sem a interferência do mouse.*/
-    padding: 10px; 
+    padding: 5px; 
     border-radius: 3px; /* borda dos botões ao passar o mouse.*/
     text-decoration: none; /*Letras dos botões sem o sublinhado.*/
     transition-duration: .5s; /*Tempo de transição ao passar o mouse.*/
+    
+    
     
 }
 
 nav > a:hover{
 
-    background-color: var(--cor4); /*Cor dos botões ao passar o mouse.*/
+    background-color: var(--cor3); /*Cor dos botões ao passar o mouse.*/
 
     /*background-image: linear-gradient(to bottom, var(--cor3), var(--cor4), var(--cor5));  *** Nota: Não foi possivel usar o "transitio-duration" no "backcolor-image" */
 
@@ -144,11 +147,13 @@ main{
     min-width: 400px; /* Aqui configuramos o tamnho mínimo e máximo, para que seja uma página responsiva*/
     max-width: 1000px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 20px;
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+   box-shadow: 5px 0px 15px rgba(153, 150, 150, 0.562);
+  
     
 }
 
@@ -218,6 +223,7 @@ main img{ /*Configuração de todas as imagens dentro da tag "main"(Conteúdo pr
     width: 85% ;
     margin: 70px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.452);
+   
 }
 
 main img.pequena{
@@ -228,7 +234,7 @@ main img.pequena{
 }
 aside{
    background-color: #83e1ad9c;/*Cor de fundo do "Aside*/
-   padding: 10px; /*Espaço ao redor do "Aside*/
+   padding: 20px; /*Espaço ao redor do "Aside*/
    border-radius: 10px; /*bordas arredondadas*/
    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.438); /*Sombra no bloco "Aside"*/
 }
@@ -244,6 +250,7 @@ aside > ul{
     background-color: var(--cor5); /*Cor de fundo do H3, dentro de "Aside"*/
     color: white; /*Cor da fonte*/
     padding: 8px; /*Espaço ao redor do H3*/
+    text-align: center;
     margin: -10px -10px 0px -10px; /*Os backgroud-colors são alinhados.Cor clara e cor escura*/
     border-radius: 10px 10px 0px 0px; /*Bordas de cima e as bordas de baixo*/
  }
@@ -252,21 +259,22 @@ aside > ul{
 
 
 footer{
-    background-image: linear-gradient(to left, var(--cor6), transparent);
+    background-color: var(--cor5);
     color: white;
     padding: 5px;
     text-align: center;
     font-size: 0.8em;   
-  
+   
 }
 
 footer a{
     text-decoration: none;
-    color:var(--cor6);    
+    color:white;    
+ 
 }
 
 footer a:hover{
-    color: white;
+    color:var(--cor3);
 }
 
 

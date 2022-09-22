@@ -8,20 +8,22 @@
 <style>
     body{
         height: 100vh;
-        background-color: black;
+        background-color: black;/*Cor do fundo de tela*/
         color: black;
-        background-image: url('imagens/imagens/img1.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover; /*Preenche a tela com 100% da imagem, porém cortando a tela*/
+        background-image: url('imagens/imagens/img1.jpg'); /*Imagem de fundo de tela*/
+        background-repeat: no-repeat; /*a imagem não se repete no fundo de tela*/
+        background-position: left center; /*definimos  que parte da imagem seria selecionada como fundo*/
+        background-size: cover; /*Preenche a tela com 100% da imagem, porém cortando a tela, impedindo que apareca barras com a cor de fundo*/
+        background-attachment: fixed; /*fixa a imagem de fundo para que ela nao se movimente com a barra de rolagem*/
     }
 
     main{
-        background-color: white;
+        background-color: rgb(248, 243, 243);
         padding: 10px;
         margin: auto;
-    
-        width: 700px;
+        border: 1.5px solid black;
+        border-radius: 10px;    
+        max-width: 700px;
     }
     
 </style>
