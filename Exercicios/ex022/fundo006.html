@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    body{
-        height: 100vh;
-        background-color: black;/*Cor do fundo de tela*/
-        color: black;
-        background-image: url('imagens/imagens/img1.jpg'); /*Imagem de fundo de tela*/
-        background-repeat: no-repeat; /*a imagem não se repete no fundo de tela*/
-        background-position: left center; /*definimos  que parte da imagem seria selecionada como fundo*/
-        background-size: cover; /*Preenche a tela com 100% da imagem, porém cortando a tela, impedindo que apareca barras com a cor de fundo*/
-        background-attachment: fixed; /*fixa a imagem de fundo para que ela nao se movimente com a barra de rolagem*/
-    }
 
-    main{
-        background-color: rgb(248, 243, 243);
-        padding: 10px;
-        margin: auto;
-        border: 1.5px solid black;
-        border-radius: 10px;    
-        max-width: 700px;
-    }
+    <style>
+        body{
+            height: 100vh;
+            background-color: beige;
+            background-image: url('imagens/ocean.jpg');
+            background-size: cover;
+            padding-top: 0px;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            /*Shorthand backgroung: color / image / position / [size] / attachment*/
+            /*background: beige url('imagens/ocean.jpg') center  fixed;*/
+        }
+
+            
+        main{
+            background-color: white; /*Cor de fundo do main*/
+            max-width: 400px; /*Largura do main*/
+            background-image: url('imagens/Eu&Ela.jpeg');
+            background-repeat: no-repeat; /**/
+            background-size: cover; /*Preenche todo o espaço com a imagem*/
+            border-radius: 10px;
+            border: 2px solid white;
+            ; /*Bordas arredondadas*/
+            height: 1200px; /*Altura do main*/
+            padding: 10px;
+            margin: auto; /*Centralização do conteúdo*/
+            color:white; /*cor da fonte*/
+        }
+
+        h1{
+            text-align: center; /*centraliza o h1*/
+        }
+        
+
+
+    </style>
+
     
-</style>
-
 </head>
 <body>
-
-<main>
-
-    <h1>Teste de imagem de Fundo</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus perferendis nostrum nisi eaque exercitationem laboriosam at esse! Accusamus iste voluptates cupiditate sunt, explicabo necessitatibus quibusdam nostrum commodi alias voluptatum odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat blanditiis eius earum officia quia magnam sapiente consequatur, pariatur aut tempore quaerat asperiores soluta doloribus magni at neque dolorem eveniet sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ab adipisci, tempora laudantium inventore corrupti! Harum ducimus fugit esse, hic facilis tempore possimus aliquid aut dignissimos quae quod, rerum voluptates?</p>
-
-    <h2>Configurando a Imagem de fundo</h2>
-
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quam saepe illum distinctio consequuntur tenetur aut excepturi quod, nemo facere vel asperiores, rerum eius dignissimos soluta est maiores alias sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, officia. Sapiente consectetur obcaecati fuga libero quas rerum aperiam explicabo officiis dolor nam architecto beatae asperiores soluta, corrupti consequuntur accusantium iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum neque, accusamus tempora reiciendis necessitatibus assumenda dolorum nesciunt, doloribus est quae, numquam quod quia atque. Laborum nostrum soluta consectetur praesentium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sed harum totam inventore aliquid, eveniet recusandae, ab rerum commodi velit aliquam nostrum vel! Nobis voluptas a repellat. Id, delectus corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis nihil quidem alias sapiente. Qui dolore perspiciatis unde adipisci ipsam eius libero repellendus ipsum doloremque! Ab voluptatem quisquam rerum reiciendis?</p>
-<br>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quam saepe illum distinctio consequuntur tenetur aut excepturi quod, nemo facere vel asperiores, rerum eius dignissimos soluta est maiores alias sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, officia. Sapiente consectetur obcaecati fuga libero quas rerum aperiam explicabo officiis dolor nam architecto beatae asperiores soluta, corrupti consequuntur accusantium iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum neque, accusamus tempora reiciendis necessitatibus assumenda dolorum nesciunt, doloribus est quae, numquam quod quia atque. Laborum nostrum soluta consectetur praesentium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sed harum totam inventore aliquid, eveniet recusandae, ab rerum commodi velit aliquam nostrum vel! Nobis voluptas a repellat. Id, delectus corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis nihil quidem alias sapiente. Qui dolore perspiciatis unde adipisci ipsam eius libero repellendus ipsum doloremque! Ab voluptatem quisquam rerum reiciendis?</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quam saepe illum distinctio consequuntur tenetur aut excepturi quod, nemo facere vel asperiores, rerum eius dignissimos soluta est maiores alias sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, officia. Sapiente consectetur obcaecati fuga libero quas rerum aperiam explicabo officiis dolor nam architecto beatae asperiores soluta, corrupti consequuntur accusantium iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum neque, accusamus tempora reiciendis necessitatibus assumenda dolorum nesciunt, doloribus est quae, numquam quod quia atque. Laborum nostrum soluta consectetur praesentium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sed harum totam inventore aliquid, eveniet recusandae, ab rerum commodi velit aliquam nostrum vel! Nobis voluptas a repellat. Id, delectus corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis nihil quidem alias sapiente. Qui dolore perspiciatis unde adipisci ipsam eius libero repellendus ipsum doloremque! Ab voluptatem quisquam rerum reiciendis?</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quam saepe illum distinctio consequuntur tenetur aut excepturi quod, nemo facere vel asperiores, rerum eius dignissimos soluta est maiores alias sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, officia. Sapiente consectetur obcaecati fuga libero quas rerum aperiam explicabo officiis dolor nam architecto beatae asperiores soluta, corrupti consequuntur accusantium iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum neque, accusamus tempora reiciendis necessitatibus assumenda dolorum nesciunt, doloribus est quae, numquam quod quia atque. Laborum nostrum soluta consectetur praesentium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sed harum totam inventore aliquid, eveniet recusandae, ab rerum commodi velit aliquam nostrum vel! Nobis voluptas a repellat. Id, delectus corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis nihil quidem alias sapiente. Qui dolore perspiciatis unde adipisci ipsam eius libero repellendus ipsum doloremque! Ab voluptatem quisquam rerum reiciendis?</p>
-</main>
     
+    <main>
+        
+        <h1>Teste de Imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam doloribus eveniet magni fuga ratione tenetur voluptatum officiis accusantium, totam reiciendis enim, nobis optio veniam soluta error, omnis ut odit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis iure dolor hic cupiditate earum omnis, excepturi magnam recusandae rerum molestiae expedita aspernatur impedit vitae harum, ad facere voluptate at consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laudantium accusantium maxime enim voluptatem beatae repellat! Asperiores reiciendis, voluptate dignissimos commodi ut sequi magni nam deleniti? Exercitationem blanditiis dolore possimus!</p>
+    </main>
 </body>
 </html>
