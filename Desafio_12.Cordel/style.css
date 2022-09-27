@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: white;
+}
+
+header{
+    background-color: black; /*Fundo do cabeçalho*/
+    color: white; /*Cor da fonte*/
+    text-align: center; /*Centralizar fontes na tela*/
+}
+
+header > h1{
+    padding-top: 50px; /*Espaço acima do "h1"*/
+    font-variant: small-caps;
+}
+
+header > p {
+    padding: 50px; /*Espaço abaixo de "p" */
+}
+
+header a, footer a {
+    color: white; /*cor da fonte do link no cabeçalho*/
+    text-decoration: none; /*Sem sublinhado*/
+    font-weight: bolder /* Fonte em negrito*/
+}
+
+header a:hover, footer a:hover{
+
+    text-decoration: underline; /*Sublinhado ao pasar o mouse*/
+}
+
+section{ /*Configurações gerais do "Section*/
+    padding-top: 10vh; 
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    width: 400px;
+    background-color: black;
+    color: white;
+}
+
+footer{ /*Configurações de rodapé*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
