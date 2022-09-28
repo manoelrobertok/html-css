@@ -90,8 +90,8 @@ section.imagem > p {
 
 }
 
-section#img01{
-    background-image: url('imagens/');
+section#img01 {
+  background-image: url('../Desafio_12.Cordel/imagens/background001.jpg');
 
 }
 
