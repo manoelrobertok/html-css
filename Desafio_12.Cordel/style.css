@@ -22,8 +22,11 @@ header{
     background-image: url('imagens/escrita\ tinteiro.jpg');
     background-size: cover;
     background-position:left center ;
+    padding: 50px;
     color: black; /*Cor da fonte*/
     text-align: center; /*Centralizar fontes na tela*/
+    box-shadow: inset 1px 1px 10px 1px rgba(0, 0, 0, 0.644);
+    
 }
 
 
@@ -35,17 +38,20 @@ html, body {
 
 
 header > h1 {
-    padding-top: 50px;
+    padding-top: 30px;
+    text-decoration: underline rgba(0, 0, 0, 0.144);
     font-variant: small-caps;
     font-family:'Times New Roman', Times, serif;
     font-size: 5vw;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.24);
+    
 
   
 }
 
 header > p {
  
-    padding: 50px; /*Espaço abaixo de "p" */
+    padding: 30px; /*Espaço abaixo de "p" */
 }
 
 header a, footer a {
@@ -64,7 +70,7 @@ section{ /*Configurações gerais do "Section*/
     font-family: var(--fonte2);
     font-weight: bolder;
     padding-top: 8vh; 
-    padding-bottom: 15vh;
+    padding-bottom: 5vh;
     line-height: 5vw;
     padding-left: 30px;
     font-size: 3vw;
@@ -91,17 +97,17 @@ section.imagem{
 }
 
 section.imagem > p {
-    background-color: rgba(51, 50, 50, 0.767);
+    background-color: rgba(51, 50, 50, 0.438);
     min-height: 300px;
     display: inline-block;
     padding: 10px;
-    
-
+    text-shadow: 1px 1px black;
 
 }
 
 section#img01 {
   background-image: url('imagens/joaninha.jpg');
+  background-size: cover;
   
   background-position: right center;
 
@@ -111,6 +117,8 @@ section#img02{
     background-image: url('imagens/fundo01.jpg');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
+
 
 }
 
