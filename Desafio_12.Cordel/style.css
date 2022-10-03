@@ -19,7 +19,10 @@
 
 header{
     background-color: black; /*Fundo do cabeçalho*/
-    color: white; /*Cor da fonte*/
+    background-image: url('imagens/escrita\ tinteiro.jpg');
+    background-size: cover;
+    background-position:left center ;
+    color: black; /*Cor da fonte*/
     text-align: center; /*Centralizar fontes na tela*/
 }
 
@@ -46,7 +49,7 @@ header > p {
 }
 
 header a, footer a {
-    color: white; /*cor da fonte do link no cabeçalho*/
+    color: black; /*cor da fonte do link no cabeçalho*/
     text-decoration: none; /*Sem sublinhado*/
     font-weight: bolder /* Fonte em negrito*/
 }
@@ -60,15 +63,16 @@ section{ /*Configurações gerais do "Section*/
     
     font-family: var(--fonte2);
     font-weight: bolder;
-    padding-top: 10vh; 
-    padding-bottom: 10vh;
+    padding-top: 8vh; 
+    padding-bottom: 15vh;
     line-height: 5vw;
     padding-left: 30px;
     font-size: 3vw;
 }
 
 section > p {
-    padding-bottom: 2em;
+    padding-bottom: 2em; /* Espaço entre as linhas dos parágrafos*/
+    
 }
 
 section.normal{
@@ -78,24 +82,35 @@ section.normal{
 
 section.imagem{
     
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.438);
+  
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.644);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 section.imagem > p {
-    background-color: rgb(51, 50, 50);
+    background-color: rgba(51, 50, 50, 0.767);
+    min-height: 300px;
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
+    
 
 
 }
 
 section#img01 {
-  background-image: url('../Desafio_12.Cordel/imagens/background001.jpg');
+  background-image: url('imagens/joaninha.jpg');
+  
+  background-position: right center;
 
 }
 
 section#img02{
+    background-image: url('imagens/fundo01.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
 
 }
 
