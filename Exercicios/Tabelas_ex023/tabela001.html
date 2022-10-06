@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header{
+            background-image: linear-gradient(to bottom, rgb(173, 126, 126), rgb(214, 202, 202), rgb(136, 108, 108));
+            padding: 50px;
+        }
+
+        header> h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        h2{
+            text-align: center;
+            padding: 20px;
+        }
+
+        p{
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            ;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse; /*As bordas foram fundidas(sem separação)*/
+            border: 5px solid pink;  /*Borda da tabela */
+            margin: auto;
+           
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px; /*Altura das bordas nos dados(td)*/
+        }
+
+        td.red{
+            background-color:red;
+        }
+
+        td.yellow{
+            background-color: yellow;
+        }
+
+        td.green{
+            background-color: green;
+        }
+
+        td.blue{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<header>
+    <h1>O uso das Tabelas</h1>
+</header>
+<p>Obs: Não é indicado usar Tabelas para construir o Layout de um site!</p>
+
+<h2>Hierarquias de Tabelas</h2>
+<p>Obs:Nossas tabelas precisam obedecer uma Hierarquia:</p>
+
+<p>1- Table= Tabela</p>
+<p>2- Table Row (tr)= Linhas da Tabela</p>
+<p>3- Table Header= Cabeçalho da Tabela</p>
+<p>4- Table Data (td)= Dados da Tabela</p>
+
+<table>  <!--Tabela-->
+    <tr> <!--"tr"  Primeira Linha da tabela-->
+        <td class="yellow">A1</td> <!--"td" Dados da linha da tabela ** Criamos uma classe para "A1" e definimos a cor de fundo amarelo -->
+        <td>B1</td>
+        <td>C1</td>
+    </tr>
+
+    <tr> <!--Segunda linha da tabela-->
+        <td>A2</td> <!--Dados da segunda linha da tabela-->
+        <td>B2</td>
+        <td class="red">C2</td>
+    </tr> 
+
+    <tr> <!--Terceira linha da tabela-->
+        <td>A3</td> <!--Dados da Terceira linha da tabela-->
+        <td class="blue">B3</td>
+        <td>C3</td>
+    </tr> 
+
+    <tr> <!--Quarta linha da tabela-->
+        <td>A4</td> <!--Dados da Quarta linha da tabela-->
+        <td>B4</td>
+        <td class="green">C4</td>
+    </tr> 
+
+
+</table>
+
+    
+</body>
+</html>
