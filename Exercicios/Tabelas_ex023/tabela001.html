@@ -8,7 +8,7 @@
 
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif; /*Fonte usadas erm todo documento*/
            
         }
         
@@ -18,55 +18,68 @@
         }
 
         header{
-            background-image: linear-gradient(to bottom, rgb(173, 126, 126), rgb(214, 202, 202), rgb(136, 108, 108));
+            background-image: linear-gradient(to bottom, rgb(173, 126, 126), rgb(214, 202, 202), rgb(136, 108, 108)); /*Cabeçalho do site*/
             padding: 50px;
         }
 
-        header> h1{
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
+        header> h1{  /*Título do cabeçalho do site*/
+            text-align: center; /*Centralizar o titulo*/
+            font-family: Arial, Helvetica, sans-serif; /*Fonte do título*/
+            font-weight: bold; /*Letras em negrito*/
         }
         h2{
-            text-align: center;
+            text-align: center; /*Subtítulo*/
             padding: 20px;
         }
 
         p{
-            text-align: center;
+            text-align: center;  /*Parágrafos*/
             padding-top: 30px;
             padding-bottom: 30px;
             ;
         }
 
         table{
-            width: 600px;
+            width: 300px;  /*Tabela*/
+            height: 300px;
             border-collapse: collapse; /*As bordas foram fundidas(sem separação)*/
-            border: 5px solid pink;  /*Borda da tabela */
+          /* border: 5px solid black;  /*Borda da tabela */
             margin: auto;
+            
+            
            
         }
 
-        td{
-            border: 1px solid black;
+        td{  /*Dados da Tabela*/
+            border: 2px solid black;
             padding: 8px; /*Altura das bordas nos dados(td)*/
+            vertical-align:middle;
+            text-align: center;
+            font-weight: bold;
+            background-color: green;
+            transition-duration: 0.3s;
         }
 
-        td.red{
-            background-color:red;
+     td.red{  /*Criação da classe "red" */
+           /* background-color:red;*/
+          
         }
 
         td.yellow{
-            background-color: yellow;
+          
         }
 
         td.green{
-            background-color: green;
+           background-color: green;
         }
 
         td.blue{
-            background-color: blue;
-            color: white;
+          /*  background-color: blue;*/
+         /*   color: white;*/
+        }
+        td:hover{
+            background-color: yellow;
+            color: red;
         }
     </style>
 
