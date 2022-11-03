@@ -8,126 +8,100 @@
 
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif; /*Fonte usadas erm todo documento*/
-           
-        }
-        
-        *{
-            margin: 0px;
-            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         header{
-            background-image: linear-gradient(to bottom, rgb(173, 126, 126), rgb(214, 202, 202), rgb(136, 108, 108)); /*Cabeçalho do site*/
+            background-color: antiquewhite;
+            width: auto;
+            height: 150px;
+            font-style: italic;                    
+         
+        }
+
+        header > h1{
+            text-align: center;
             padding: 50px;
+            margin: auto;
+            
         }
 
-        header> h1{  /*Título do cabeçalho do site*/
-            text-align: center; /*Centralizar o titulo*/
-            font-family: Arial, Helvetica, sans-serif; /*Fonte do título*/
-            font-weight: bold; /*Letras em negrito*/
-        }
-        h2{
-            text-align: center; /*Subtítulo*/
-            padding: 20px;
+        
+        main > p{
+            text-align: center;
         }
 
-        p{
-            text-align: center;  /*Parágrafos*/
-            padding-top: 30px;
-            padding-bottom: 30px;
-            ;
+        main > h2{
+            text-align: center;
         }
 
         table{
-            width: 300px;  /*Tabela*/
-            height: 300px;
-            border-collapse: collapse; /*As bordas foram fundidas(sem separação)*/
-          /* border: 5px solid black;  /*Borda da tabela */
-            margin: auto;
-            
-            
-           
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;/*Os quadrados da tabela ficam juntos.*/
+            margin: auto; /*Posicionamento da tabela no centro.*/
         }
 
-        td{  /*Dados da Tabela*/
+        td{
             border: 2px solid black;
-            padding: 8px; /*Altura das bordas nos dados(td)*/
-            vertical-align:middle;
-            text-align: center;
-            font-weight: bold;
+            text-align: center; /*Alinhamento horizontal dos dados.*/ 
+            vertical-align: top; /*Alinhamento vertical dos dados.*/
+            padding: 10px;
             background-color: green;
-            transition-duration: 0.3s;
+            color: white;
+            font-weight: bolder;
         }
 
-     td.red{  /*Criação da classe "red" */
-           /* background-color:red;*/
-          
-        }
+       
 
-        td.yellow{
-          
-        }
 
-        td.green{
-           background-color: green;
-        }
 
-        td.blue{
-          /*  background-color: blue;*/
-         /*   color: white;*/
-        }
-        td:hover{
-            background-color: yellow;
-            color: red;
-        }
     </style>
-
 
 </head>
 <body>
+    <header>
+        <h1>Minha Primeira Tabela</h1>
+    </header>
 
-<header>
-    <h1>O uso das Tabelas</h1>
-</header>
-<p>Obs: Não é indicado usar Tabelas para construir o Layout de um site!</p>
+    <main>
+        <h2>Hierarquias de Tabelas Simples</h2>
+        <p> Toda tabela simples deve atender uam hierarquia:</p>
+        <p>Table = Tabela. <br>
+           Table Row = Linha da Tabela. <br>
+           Table Header = Cabeçalho da Tabela. <br>
+           Table Data = Dados da Tabela.
+        </p>
+    </main>
 
-<h2>Hierarquias de Tabelas</h2>
-<p>Obs:Nossas tabelas precisam obedecer uma Hierarquia:</p>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
 
-<p>1- Table= Tabela</p>
-<p>2- Table Row (tr)= Linhas da Tabela</p>
-<p>3- Table Header= Cabeçalho da Tabela</p>
-<p>4- Table Data (td)= Dados da Tabela</p>
+        <tr>
+            <td>A2</td>
+            <td>b2</td>
+            <td>C2</td>
+        </tr>
 
-<table>  <!--Tabela-->
-    <tr> <!--"tr"  Primeira Linha da tabela-->
-        <td class="yellow">A1</td> <!--"td" Dados da linha da tabela ** Criamos uma classe para "A1" e definimos a cor de fundo amarelo -->
-        <td>B1</td>
-        <td>C1</td>
-    </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
 
-    <tr> <!--Segunda linha da tabela-->
-        <td>A2</td> <!--Dados da segunda linha da tabela-->
-        <td>B2</td>
-        <td class="red">C2</td>
-    </tr> 
-
-    <tr> <!--Terceira linha da tabela-->
-        <td>A3</td> <!--Dados da Terceira linha da tabela-->
-        <td class="blue">B3</td>
-        <td>C3</td>
-    </tr> 
-
-    <tr> <!--Quarta linha da tabela-->
-        <td>A4</td> <!--Dados da Quarta linha da tabela-->
-        <td>B4</td>
-        <td class="green">C4</td>
-    </tr> 
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
 
 
-</table>
 
-    
+
 </body>
 </html>
