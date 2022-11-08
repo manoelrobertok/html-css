@@ -38,9 +38,9 @@
 
         table{
             width: 500px;
-            border-collapse: collapse;
-            border: 2px solid black;
+            border-collapse: collapse;            
             margin: auto;
+            position: relative; /*Vamos manter "th" da tabela fixo ao rolar a página*/
         }
 
       thead{
@@ -48,7 +48,15 @@
         color: white;
         }
 
-        td,th{
+        thead > tr > th{
+                position: sticky; /*Vamos manter "th" da tabela fixo ao rolar a página*/
+                top: -1px;
+                background-color: grey;
+
+        }
+
+
+        td, th{
             text-align: center;
             border: 2px solid black;
             padding: 8px;            
@@ -59,51 +67,58 @@
         font-weight: bolder;
     }
 
+    tbody > tr:nth-child(odd){
+                background-color: lightgray;
+
     </style>
 
 </head>
 <body>
-    <header>
-        <h1>Uso de Tabelas Grandes</h1>
+    <header>  <!--Cabeçalho da tabela-->
+        <h1>Uso de Tabelas Grandes</h1> <!--Título no cabeçalho-->
     </header>
 
-    <h3>Anatomia para Tabelas Grandes</h3>
+    <h2>Anatomia para Tabelas Grandes</h2> <!--Subtítulo no corpo da tabela-->
     <p>
         Table = Tabela <br>
-        Thead = Cabeça da Tabela <br>
+        Thead = Cabeça da Tabela <br>    <!--Hierarquia para tabelas grandes-->
         Tbody = Corpo da Tabela <br>
         Tfoot = Rodapé da Tabela <br>
+
     Obs:. Em todas as partes da tabela, podemos ter. <br>
             TR, TD, TH
-
     </p>
 
             <h2>Tabela de População por Estado</h2>
 
     <table>
-                        <thead>
+
+ <caption>População das Unidades Federativas</caption> <!-- "Capition" Legenda da minha tabela-->
+
+           <thead> <!--Cabeça ou Dados que serão apresentados pela tabela-->
                         <tr>
-                                <th>Posição</th>
-                                <th>Estado</th>
-                                <th>População</th>
+                                <th scope="col" style="width: 40px;">Posição</th> <!--scope="col" Título da coluna "Posição"-->
+                                <th scope="col">Estado</th> <!--scope="col" Título da coluna "Estado"-->
+                                <th scope="col">População</th> <!-- scope="col" Título da coluna "População"-->
 
                         </tr>
-                        </thead>
+          </thead>
 
-        <tbody>
-                    <tr>
+        <tbody>     <!--Corpo da Tabela-->
+
+                    <tr>    <!--Linhas da Tabela-->
                             <td>1</td>
-                            <td>São Paulo</td>
+                            <td>São Paulo</td>   <!--Dados da tabela-->
                             <td>45.9190,49</td>
                     </tr>
 
-                    <tr>
+                    <tr>    <!--Linhas da Tabela-->
                             <td>2</td>
                             <td>Minas Gerais</td>
                             <td>21.158,791</td>
                     </tr>
 
-                    <tr>
+                    <tr>    <!--Linhas da Tabela-->
                             <td>3</td>
                             <td>Rio de Janeiro</td>
                             <td>17.264,943</td>
@@ -260,7 +275,7 @@
             <tfoot>
 
                     <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total</th> <!--scope="row" Títlulo da Linha "Total de habitantes"-->
                         <td></td>
                         <td>210.147,125</td>
 
