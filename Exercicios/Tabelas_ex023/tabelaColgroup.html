@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Colgroup</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px; /*Largura da tabela*/
+            border-collapse: collapse ; /*Gradesda tabela sem espaço.*/
+            margin: auto;
+        }
+
+        caption{  /**/
+            font-size: 1em;
+        }
+
+        th, td{ /*Configuração de th(Título) e td(Dados)*/
+            border: 2px solid black;
+            padding: 6px;  /*Grades da Tabela*/
+        }
+    </style>
+
+</head>
+<body>
+
+    <table>
+            <caption>
+                Filmes Favoritos
+            </caption>
+
+        <thead> <!--Cabeça da nossa tabela.-->
+
+            <tr>
+                <th scope="col">Grupo</th> <!-- Th - Títulos da tabela-->
+                <th scope="rowgroup">Nomes</th>  <!-- Th - Títulos da tabela-->
+                <th scope="colgroup"  colspan="3">Filmes</th>  <!-- Th - Títulos da tabela-->
+
+                <!--colspan- Expandindo(ocupando) 3 colunas -->
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>  <!--Linha-->   <!-- rowspan- Expandindo(ocupando) em 3 Linhas-->
+                <th scope="rowgroup" rowspan="3">Mulheres</th>   <!-- Th - Títulos da tabela-->
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>  <!--Td - Dados(informações) da Tabela-->
+                <td>Vingadores</td>
+                
+            </tr> <!--Linha-->
+
+            <tr> <!--Linha-->
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>   <!--Td - Dados(informações) da Tabela-->
+                <td>Batman</td>
+            
+            </tr> <!--Linha-->
+
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>   <!--Td - Dados(informações) da Tabela-->
+                <td>Big Hero</td>
+
+            </tr> <!--Linha-->
+
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>  <!-- rowspan- Expandindo(ocupando) em 3 Linhas-->
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>   <!--Td - Dados(informações) da Tabela-->
+                <td>Gladiador</td>
+            </tr>
+
+            <tr>  <!--Linha-->
+                <td>Daniel lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>    <!--Td - Dados(informações) da Tabela-->
+                <td>Dangal</td>
+            </tr>
+
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>   <!--Td - Dados(informações) da Tabela-->
+                <td>Toy Story</td>
+            </tr>
+
+            
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
