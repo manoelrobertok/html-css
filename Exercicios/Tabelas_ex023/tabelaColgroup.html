@@ -31,16 +31,17 @@
 <body>
 
     <table>
-            <caption>
+            <caption style="font-weight: bolder;" >
                 Filmes Favoritos
             </caption>
 
         <thead> <!--Cabeça da nossa tabela.-->
 
-            <tr>
-                <th scope="col">Grupo</th> <!-- Th - Títulos da tabela-->
-                <th scope="rowgroup">Nomes</th>  <!-- Th - Títulos da tabela-->
-                <th scope="colgroup"  colspan="3">Filmes</th>  <!-- Th - Títulos da tabela-->
+            <tr>  <!--Todo "TH" precisa ter a sua definição de escopo!-->
+
+                <th  style="background-color: yellow;"  scope="col">Grupo(Th)</th> <!-- Th - Títulos da tabela-->
+                <th  style="background-color: pink ;" scope="rowgroup">Nomes(Th)</th>  <!-- Th - Títulos da tabela-->
+                <th style="background-color: red;" scope="colgroup"  colspan="3">Filmes(Th)</th>  <!-- Th - Títulos da tabela-->
 
                 <!--colspan- Expandindo(ocupando) 3 colunas -->
             </tr>
@@ -49,7 +50,7 @@
 
         <tbody>
             <tr>  <!--Linha-->   <!-- rowspan- Expandindo(ocupando) em 3 Linhas-->
-                <th scope="rowgroup" rowspan="3">Mulheres</th>   <!-- Th - Títulos da tabela-->
+                <th style="background-color: rgb(150, 92, 150) ;" scope="rowgroup" rowspan="3">Mulheres(Th)</th>   <!-- Th - Títulos da tabela-->
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>  <!--Td - Dados(informações) da Tabela-->
@@ -74,7 +75,7 @@
             </tr> <!--Linha-->
 
             <tr>
-                <th scope="rowgroup" rowspan="3">Homens</th>  <!-- rowspan- Expandindo(ocupando) em 3 Linhas-->
+                <th style="background-color: grey;" scope="rowgroup" rowspan="3">Homens(Th)</th>  <!-- rowspan- Expandindo(ocupando) em 3 Linhas-->
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>   <!--Td - Dados(informações) da Tabela-->
