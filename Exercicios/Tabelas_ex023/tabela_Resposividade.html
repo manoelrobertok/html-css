@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+
+    <style>
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            padding: 20px;
+        }
+
+
+        table{
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        th, td{
+            border: 2px solid black;
+        }
+
+        tr:nth-child(even){  /*Aqui, aplicamos o efeito zebrado da tabela*/
+            background-color: rgba(128, 128, 128, 0.555);
+        }
+
+        div#container{
+            overflow-x: auto; /*Envelopamos toda a nossa tabela como uma 'div'. Criamos um 'id', onde identificamos essa div como "container". Em seguida, configuramos a "div#container" no Css para que responda a responsividade!*/
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Tabelas Responsivas</h1>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, velit! Aperiam, repudiandae? Asperiores, magni quam odit sunt non tempore sed. Deleniti laboriosam amet eum inventore sit ut blanditiis exercitationem fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequatur amet laborum maiores ratione incidunt placeat sapiente iusto tenetur ipsam nobis, consequuntur sequi reiciendis aliquam. Facere ratione quas alias soluta? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis beatae voluptatibus quod corrupti debitis nisi at, enim pariatur, aliquam dolorum sit perspiciatis aliquid blanditiis quos doloremque incidunt veniam consectetur consequuntur.</p>
+
+    <div id="container"> <!--/*Envelopamos toda a nossa tabela como uma 'div'. Criamos um 'id', onde identificamos essa div como "container". Em seguida, configuramos a "div#container" no Css para que responda a responsividade!*/-->
+        <table>
+             <caption>Vendas de 2022</caption>
+            <tr>
+                <th>Produto</th>
+                <td>Jan</td>
+                <td>Fev</td>
+                <td>Mar</td>
+                <td>Abr</td>
+                <td>Mai</td>
+                <td>Jun</td>
+                <td>Jul</td>
+                <td>Ago</td>
+                <td>Set</td>
+                <td>Out</td>
+                <td>Nov</td>
+                <td>Dez</td>
+            </tr>
+            <tr>
+                <td>Tv 47'</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Home Theater</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Samsung Galaxy S20</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Home Theater</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Home Theater</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>04</td>
+                <td>15</td>
+                <td>01</td>
+                <td>04</td>
+                <td>15</td>
+                <td>23</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
