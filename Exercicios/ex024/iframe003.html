@@ -60,8 +60,16 @@
         <p> Através da tag "li" criamos uma lista de elementos, onde criaremos três link's(tag "a").Nesse link (tag "a" ), iremos inserir o endereço do nosso documento que será mostrado dentro do iframe, acrescentando a tag "target" com o nome do documento dentro do iframe.  </p>
 
 
-    <iframe name="frame" src="">
-        <p>Infelizmente seu novegador não é compatível</p>
+    <iframe name="frame" srcdoc="<h1> Escolha uma das opções acima:</h1><h3>Aqui podemos colocar um parágrafo ou um subtítulo!
+    </h3>"> <!--Aqui colocamos um link do "curso em video", para que o iframe não fique em branco.-->
+
+        <!--Se quisermos inserir textos em html e ainda imagens dentro do iframe, podemos usar a tag "srcdoc" -->
+
+        <!--Exemplo:-->
+
+       <!-- <iframe name="frame" src>
+        <p>Infelizmente seu novegador não é compatível</p>> -->
+
     </iframe>
 
     <p>Agora, na tag "iframe", trazemos a tag "name" onde iremos nomear onde o "target" irá abrir.
