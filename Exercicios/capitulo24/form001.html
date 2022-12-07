@@ -6,9 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiro Formulário</title>
 
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       
+    </style>
 
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
+
+         <h1>Meu primeiro formulário</h1>  <!--Com h1, colocamos um título.-->
+
+         <form action="cadastro.php" autocomplete="off"> 
+
+            <!--Com a tag "action="cadastro.php", configuramos para onde vão as informaçõesinseridas no formulário.Nesse caso, "cadastro.php", que iremos criar posteriormente.-->
+            
+            <!--  autocomplete="off"  Configuramos para que não fique "completando nossa digitação".-->
+
+                <!--Observação: Precisamos criar uma relação entre o dado solicitado, com a informação inserida pelo usuário.Para isso, envelopamos o DADO com a tag "label", e criamos uam relação com o "id".-->
+
+            <p> <label for="inome">Nome: </label> <input type="text" name="inome" id="nome"> </p> <!--Com "input_text", criamos um formulário para "Nome"-->
+
+            <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p> <!--Com "input_text", criamos um formulário para "Sobrenome"-->
+
+            <p><label for="itelefone">Telefone:</label> <input type="text" name="telefone" id="itelefone"></p>
+
+            <p><label for="ie-mail">e-mail:</label> <input type="text" name="ie-mail" id="e-mail"></p>
+
+            <p><input type="submit" value="Enviar"></p> <!--Com a tag"Input_submit", criamos o botão "Enviar".-->
+
+         </form>
+
 </body>
 </html>
