@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+</head>
+<body>
+
+    <h1>Primeiro Formulário</h1>
+
+    <form action="cadastro.php"  autocomplete="off"  method="post">
+        
+        <!-- Através da tag "Action", informamos para onde os dados serão enviados.Nesse caso, "cadastrophp"-->
+
+        <!---Com a tag "autocomplete= off", estamos desligando a opção de auto completar nossa digitação nos campos.-->
+
+        <!--O method="post", "Esconder" as informações inseridas pelo usuário na Url.Porém, isso não quer dizer que os dados estarão seguros.Para isso, é necessário configurações mais avançadas.Exemplo, usando o protocolo https.-->
+
+        <p><label for="inome"><b>Nome:</b></label> <!--A teg "b", colocou o nome em negrito.-->
+
+            <input type="text" name="nome" id="inome"> </p> <!-- Solicitamos que seja inserido o nome-->
+
+          <p><label for="isobrenome">Sobrenome:</label> 
+
+    <!--Através da tag "label", criamos um vínculo(relação) entre a caixa e o dado solicitado.-->
+
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+             <p><input type="submit" value="ENVIAR"></p> <!--Enviamos os dados preenchidos-->
+
+
+    </form>
+    
+</body>
+</html>
