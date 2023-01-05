@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário </title>
+    <style>
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.76), grey);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        fieldset{
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        legend{
+            text-align: center;
+            padding: 0px;
+            font-weight: bolder;
+        }
+        form{
+
+            width: 500px;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Teste de formulário</h1>
+
+    <legend>Dados pessoais</legend>
+
+        <form action="cadastro.php" method="get">
+            <fieldset> <!--A teg "fieldset", cria um agrupamento dos dados do formulário.Que podemos estilizá-lo no Css.-->
+                
+                <!--A tag "legend", cria uma legenda para o agrupamento.-->
+                <p>
+                    <label for="inome">Nome</label >
+                    <input type="text" name="nome" id="inome" placeholder="Nome completo" maxlength="30" required size="30">
+                </p>
+                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx) xxxx-xxxx"  required size="28">
+                </p>
+                <p>
+                    <label for="icel">Celular</label>
+                    <input type="number" name="cel" id="icel" placeholder="(xx) xxxxx-xxxx" requerid >
+                </p>
+                <p>
+                    <label for="ie-mail">E-mail</label>
+                    <input type="email" name="email" id="ie-mail" autocomplete="e-mail"  size="20" placeholder="name@xyz.com">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+
+        </form>
+    
+</body>
+</html>

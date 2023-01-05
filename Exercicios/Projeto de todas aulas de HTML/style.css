@@ -7,6 +7,9 @@
 
        
     }
+    main{
+        margin:center;
+    }
 
     header{
         background-color: rgba(75, 70, 70, 0.507);
@@ -40,6 +43,7 @@
         color: rgb(26, 26, 70);
         font-size: 20PX;
         text-align: left;
+       
       
         
         /*Através da "text-aling", o  texto será posicionado no centro.*/
