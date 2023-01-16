@@ -44,13 +44,31 @@
             value="50" required oninput="ival.innerHTML = Number(inum.value)" >
             <output id="ival">50</output>
 
+    
+
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano"  min="1900" max="2020"
+            oninput="calcIdade">
         </p>
 
+        <p>
+            <label for="iidade">A sua idade é:</label>
+            <output  id="iidade">0</output>
+        </p>
 
-
+       
+             
     </form>
+
+    <script>
+        function calcIdade(){
+            let atual= new Date(). getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+
+   
+
 </body>
 </html>
